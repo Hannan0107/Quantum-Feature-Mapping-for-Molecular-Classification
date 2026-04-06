@@ -111,7 +111,7 @@ Sweeps shot budgets from 1,024 to 8,192 on the same 10 molecules using the 10+2 
 ---
 
 ## Experiment Map
-
+ 
 ```mermaid
 flowchart TD
     DS(["`**MoleculeNet BBBP**
@@ -152,7 +152,8 @@ flowchart TD
  
     O1 & O2 & O3 & O4 & O5 --> PAPER
  
-    PAPER(["`**Paper**`"])
+    PAPER(["`**paper**
+  `"])
  
     style NB1 fill:#9FE1CB,stroke:#0F6E56,color:#085041
     style NB2 fill:#CECBF6,stroke:#534AB7,color:#3C3489
@@ -161,8 +162,8 @@ flowchart TD
     style NB5 fill:#FAC775,stroke:#854F0B,color:#633806
 ```
  
-
 ---
+ 
 
 ## Hardware & Software
 
