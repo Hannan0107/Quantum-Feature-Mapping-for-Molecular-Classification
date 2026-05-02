@@ -49,7 +49,7 @@ Random Forest is adopted as the primary classical baseline throughout the paper.
 
 ---
 
-### 2. `Ablation_Study_ibm_kingston[8192_shots].ipynb`:** Table I — *Hardware Ablation Configuration vs. Accuracy* and Section IV-B — *Primary Classification Performance*
+### 2. `Ablation_Study_ibm_kingston[8192_shots].ipynb`:Table I — *Hardware Ablation Configuration vs. Accuracy* and Section IV-B — *Primary Classification Performance*
 
 Both notebooks are identical runs of the same ablation experiment (the Copy is a verified duplicate confirming reproducibility). Each cell tests one of six Ncore+Mtail qubit configurations on ibm_kingston at 8,192 shots across 10 splits on the BBBP dataset.
 
