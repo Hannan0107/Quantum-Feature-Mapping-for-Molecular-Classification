@@ -20,7 +20,7 @@ The framework is evaluated on MoleculeNet's BBBP benchmark and six additional da
 ```
 .
 ├── Classical_Benchmark.ipynb
-├── Ablation_Study_ibm_kingston_8192_shots.ipynb
+├── Ablation_Study_ibm_kingston[8192_shots].ipynb
 ├── Copy_of_Ablation_Study_New_8192_shots.ipynb
 ├── 10_splits_8_datasets_experiment_ibm_kingston.ipynb
 ├── CircuitDepth_vs_Decay_4096_shots.ipynb
