@@ -21,10 +21,10 @@ The framework is evaluated on MoleculeNet's BBBP benchmark and six additional da
 .
 ├── Classical_Benchmark.ipynb
 ├── Ablation_Study_ibm_kingston[8192_shots].ipynb
-├── Copy_of_Ablation_Study_New_8192_shots.ipynb
-├── 10_splits_8_datasets_experiment_ibm_kingston.ipynb
+├── 10_splits_7_datasets_experiment_ibm_kingston.ipynb
+├── 10_splits_Run_1024_shots_[ibm_fez,_kingston,_marrakesh].ipynb
 ├── CircuitDepth_vs_Decay_4096_shots.ipynb
-├── Signal_Decay_Convergence_shots_1024_2048_4096_8192.ipynb
+├── Signal_Decay&Convergence_shots[1024,_2048,_4096,_8192].ipynb
 └── README.md
 ```
 
@@ -49,7 +49,7 @@ Random Forest is adopted as the primary classical baseline throughout the paper.
 
 ---
 
-### 2. `Ablation_Study_ibm_kingston_8192_shots.ipynb`:** Table I — *Hardware Ablation Configuration vs. Accuracy* and Section IV-B — *Primary Classification Performance*
+### 2. `Ablation_Study_ibm_kingston[8192_shots].ipynb`:** Table I — *Hardware Ablation Configuration vs. Accuracy* and Section IV-B — *Primary Classification Performance*
 
 Both notebooks are identical runs of the same ablation experiment (the Copy is a verified duplicate confirming reproducibility). Each cell tests one of six Ncore+Mtail qubit configurations on ibm_kingston at 8,192 shots across 10 splits on the BBBP dataset.
 
@@ -96,7 +96,7 @@ Key findings:
 
 ---
 
-### 5. `Signal_Decay_Convergence_shots_1024_2048_4096_8192.ipynb`
+### 5. `Signal_Decay&Convergence_shots[1024,_2048,_4096,_8192].ipynb`
 **Corresponds to:** Table III — *Measurement Convergence: Max State Probability vs. Shot Budget* and Section IV-F
 
 Sweeps shot budgets from 1,024 to 8,192 on the same 10 molecules using the 10+2 circuit on ibm_kingston (single batch of 40 PUBs), producing the convergence matrix showing that signal fidelity stabilizes at 1,024 shots.
