@@ -1,0 +1,3 @@
+comparison,identical,hash_mol,hash_reference
+MOL(source order) vs SMILES_ORDER on source string,True,7bb436266a12d466,7bb436266a12d466
+MOL(canonical order) vs canonical traversal,True,a40c530ddd2db985,a40c530ddd2db985

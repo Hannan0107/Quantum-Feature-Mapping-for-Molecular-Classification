@@ -9,9 +9,34 @@
 
 ## Overview
 
-This work introduces the **10+2 Structure-Preserving Quantum Feature Map** — a fixed-width 12-qubit encoding designed for NISQ-compatible molecular classification. Ten qubits encode the molecular graph backbone via Ry rotations (Pauling electronegativity) and Rxx entangling gates (bond order), while two auxiliary qubits compress the remaining atomic tail. The resulting 4,096-dimensional probability vector is passed to an RBF-kernel SVM for classification.
+This work introduces the **10+2 Structure-Preserving Quantum Feature Map** — a fixed-width 12-qubit encoding designed for NISQ-compatible molecular classification. Ten qubits encode the molecular graph backbone via Ry rotations (Pauling electronegativity) and Rxx entangling gates (bond order), while two auxiliary qubits compress the remaining atomic tail. The original paper pipeline used the full 4,096-bin measurement distribution. In the current modular molecular-classification runners, the default SVM readout is instead 78 Pauli moments: 12 $\langle Z_i\rangle$ and 66 $\langle Z_iZ_j\rangle$, estimated jointly from the same computational-basis bitstrings. Full probabilities remain available as a diagnostic and legacy comparator.
 
 The framework is evaluated on MoleculeNet's BBBP benchmark and six additional datasets using the **ibm_kingston** quantum processor via IBM Quantum, with 10-split stratified cross-validation throughout.
+
+The repository also includes a modular, RDKit-based chemistry-aware strategy
+for assigning atoms to the ten individually encoded backbone qubits. It greedily
+maximizes marginal coverage of local Morgan environments and chemical roles,
+with small graph-centrality and connectivity terms; the remaining heavy atoms
+are compressed into two global tail channels. The full mathematical definition,
+assumptions, and reproducibility details are in
+[`molecular_encoding/README.md`](molecular_encoding/README.md).
+
+An initial controlled BBBP comparison using the current 78-feature $Z_i+Z_iZ_j$
+readout found that this new selector did **not** outperform selection by
+source-SMILES order in the tested pipeline (mean accuracy 0.632 vs. 0.732
+across ten paired splits). This is a descriptive
+ablation on a balanced 250-molecule sample, not evidence of universal
+superiority for SMILES order. See the method README and the saved per-split
+results for the protocol and limitations.
+
+A follow-up structural ablation adds a `CONNECTED_CORE` selector that grows the
+ten-atom backbone along molecular bonds, plus a canonical-traversal control
+that separates input-string invariance from source-file ordering. It kept the
+backbone connected in 99.6% of the benchmark molecules but did not improve BBBP
+accuracy over the traversal-dependent baseline; details and limitations are in
+the method README.
+
+![Worked aspirin example showing the RDKit molecular graph, NetworkX attributes, ten individually selected atoms, and two residual-tail summaries.](docs/assets/rdkit-networkx-10plus2.svg)
 
 ---
 
@@ -19,14 +44,74 @@ The framework is evaluated on MoleculeNet's BBBP benchmark and six additional da
 
 ```
 .
-├── Classical_Benchmark.ipynb
-├── Ablation_Study_ibm_kingston[8192_shots].ipynb
-├── 10_splits_7_datasets_experiment_ibm_kingston.ipynb
-├── 10_splits_Run_1024_shots_[ibm_fez,_kingston,_marrakesh].ipynb
-├── CircuitDepth_vs_Decay_4096_shots.ipynb
-├── Signal_Decay&Convergence_shots[1024,_2048,_4096,_8192].ipynb
-└── README.md
+├── molecular_encoding/
+│   ├── chemistry/        # RDKit cleaning, selection, atom properties, tail
+│   ├── graph/            # Attributed molecular graph and optional pooling
+│   ├── quantum/          # Circuit, simulator, Zi/ZiZj readout and alternative
+│   │                     #   quantum algorithms (kernel, Pauli, re-uploading)
+│   ├── analysis/         # Collision, capacity, PCA and plotting tools
+│   ├── results/          # Reproducible CSV results and JSON configurations
+│   └── tests/            # Unit and invariance tests
+├── docs/
+│   ├── assets/           # README figures, including the BBBP EDA plots
+│   ├── METHODOLOGY.md    # What each model sees, circuits, metrics, leakage
+│   ├── DEVELOPMENT.md    # Layer structure and how to add an experiment
+│   ├── QUANTUM_FEATURES.md  # How quantum features are extracted, step by step
+│   ├── METRICS_AND_MODELS.md  # RF vs atom selection; Acc, F1, AUC, nested C
+│   └── generate_encoding_visual.py
+├── analysis/
+│   ├── bbbp_feature_audit/  # Molecules, RDKit features, plots and leakage audit
+│   ├── balanced_5050/       # Clean 50/50 CSVs: old versus new techniques
+│   ├── mol_order/           # MOL-file version of the primitive first-atom encoding
+│   └── final_comparison/    # Master table: all feature families on the clean 50/50 set
+├── data/bbbp_mol/                   # 500 generated .mol files + label mapping
+├── BBBP_balanced_50_50.csv          # 125/125, no original row number
+├── BBBP_balanced_50_50_canonical.csv  # Same, with canonical SMILES
+├── experiments/          # Shared tools and reproducible benchmark entry points
+│   └── legacy/           # Qiskit-dependent historical reproduction scripts
+├── BBBP.csv
+└── *.ipynb               # Original hardware and paper experiment notebooks
 ```
+
+Start with [`molecular_encoding/README.md`](molecular_encoding/README.md) for
+the method, chemistry assumptions, worked RDKit/NetworkX figure, and measured
+comparisons. Run the modular tests with:
+
+```bash
+python -m pytest molecular_encoding/tests -q
+```
+
+Run an experiment from the repository root as a module, for example
+`python -m experiments.run_selection_comparison`. Benchmark outputs are kept
+in `molecular_encoding/results/`.
+
+---
+
+## Raw dataset EDA
+
+The `BBBP.csv` file has no precomputed molecular features: only `num`, `name`,
+the label `p_np` and a SMILES string. `python -m experiments.run_raw_bbbp_eda`
+derives 13 RDKit descriptors from all 2039 parseable raw molecules (1560
+permeable, 479 non-permeable) and writes the standard exploratory plots to
+`docs/assets/bbbp_eda_*.png`.
+
+![Pairplot of raw BBBP descriptors coloured by permeability.](docs/assets/bbbp_eda_pairplot.png)
+
+The class imbalance is visible, and the separation is dominated by polarity:
+permeable molecules concentrate at low TPSA, HBD and HBA and higher logP.
+Descriptive univariate AUCs on the raw data:
+
+| Descriptor | AUC | Descriptor | AUC |
+|---|---:|---|---:|
+| TPSA | 0.829 | HBA | 0.776 |
+| HBD | 0.805 | MolWt | 0.707 |
+| NumHeteroatoms | 0.780 | MolLogP | 0.697 |
+
+More plots (class balance, distributions, boxplots, correlation heatmap) are
+in `docs/assets/`, and the descriptor table plus settings are in
+`molecular_encoding/results/bbbp_raw_*`. This is descriptive raw-data analysis
+without deduplication or balancing; it is not the controlled 250-molecule
+benchmark used by the experiments below.
 
 ---
 

@@ -1,0 +1,6 @@
+fold,train_n,test_n,train_scaffolds,test_scaffolds,test_positive
+1,198,52,157,25,24
+2,214,36,146,36,24
+3,196,54,141,41,30
+4,203,47,142,40,22
+5,189,61,142,40,25
