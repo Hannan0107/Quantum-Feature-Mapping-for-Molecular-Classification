@@ -1,0 +1,5 @@
+strategy,n_molecules,n_backbone,connected_backbone_fraction,mean_represented_bond_fraction
+smiles_order,250,10,0.952,0.6010467204721335
+canonical_traversal,250,10,0.988,0.5814426835730551
+chemical_coverage,250,10,0.36,0.7069435106808675
+connected_core,250,10,0.996,0.6620605757365529

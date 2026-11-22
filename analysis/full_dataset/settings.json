@@ -1,0 +1,9 @@
+{
+  "dataset": "data/BBBP_clean_full.csv",
+  "n_molecules": 1955,
+  "n_scaffolds": 1016,
+  "split": "StratifiedGroupKFold by Bemis-Murcko; acyclic molecules share one group",
+  "n_splits": 5,
+  "seed": 42,
+  "note": "inner C tuning is not group-aware; outer test folds remain disjoint by scaffold"
+}

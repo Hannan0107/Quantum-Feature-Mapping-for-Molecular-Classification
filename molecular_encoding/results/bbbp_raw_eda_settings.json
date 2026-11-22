@@ -1,0 +1,24 @@
+{
+  "source": "BBBP.csv (raw)",
+  "n_rows": 2039,
+  "class_counts": {
+    "1": 1560,
+    "0": 479
+  },
+  "descriptors": [
+    "MolWt",
+    "MolLogP",
+    "TPSA",
+    "HBD",
+    "HBA",
+    "RotB",
+    "AromaticRings",
+    "FractionCSP3",
+    "FormalCharge",
+    "RingCount",
+    "HeavyAtomCount",
+    "MolarRefractivity",
+    "NumHeteroatoms"
+  ],
+  "note": "descriptive, unbalanced raw data; no deduplication or balancing"
+}

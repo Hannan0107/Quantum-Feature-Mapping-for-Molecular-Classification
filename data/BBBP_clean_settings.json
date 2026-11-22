@@ -1,0 +1,30 @@
+{
+  "input": "data/bbbp_mol/bbbp.csv",
+  "output": "data/BBBP_clean_full.csv",
+  "rdkit_version": "2024.03.5",
+  "input_rows": 2039,
+  "final_rows": 1955,
+  "decisions": {
+    "salts": "largest organic fragment kept; ties by heavy atoms, heteroatoms, canonical SMILES",
+    "charges": "formal charges kept, never neutralized",
+    "tautomers": "not canonicalized; only conflicting groups flagged",
+    "stereo": "isomeric SMILES preserved; stereo-blind circuit limitation flagged",
+    "conflicting_labels": "excluded (no external evidence to choose a label)",
+    "duplicates": "first occurrence kept",
+    "elements": "explicit assertion against PAULING_EN, no silent default fallback"
+  },
+  "elements_present": [
+    "B",
+    "Br",
+    "C",
+    "Cl",
+    "F",
+    "I",
+    "N",
+    "O",
+    "P",
+    "S"
+  ],
+  "elements_missing": [],
+  "previous_benchmark_flag": "BBBP_balanced_50_50.csv"
+}

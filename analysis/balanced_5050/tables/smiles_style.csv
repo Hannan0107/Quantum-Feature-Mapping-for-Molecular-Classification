@@ -1,0 +1,7 @@
+style,fraction_non_permeable,fraction_permeable,auc
+aromatic lowercase 'c',0.832,0.24,0.796
+Kekule 'C1=CC',0.008,0.32,0.656
+stereochemistry '@',0.408,0.208,0.6
+starts with '[',0.064,0.176,0.5559999999999999
+salt/fragment '.',0.08,0.048,0.516
+formal charge '+/-',0.08,0.056,0.512
