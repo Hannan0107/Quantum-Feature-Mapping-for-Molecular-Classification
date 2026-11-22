@@ -1,0 +1,4 @@
+metric,value
+molecules_with_a_flip,0.7619047619047619
+mean_flip_fraction,0.4087301587301587
+accuracy_on_random_traversals,0.5595238095238095

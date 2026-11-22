@@ -1,0 +1,37 @@
+{
+  "n_valid_rows_before_deduplication": 1687,
+  "n_conflicting_structures_removed": 9,
+  "n_unique_structures": 1615,
+  "n_balanced_molecules": 250,
+  "dataset": "BBBP.csv",
+  "per_class": 125,
+  "n_splits": 10,
+  "test_size": 0.25,
+  "seed": 42,
+  "purpose": "audit of native-order leakage versus chemistry",
+  "descriptors": [
+    "MolWt",
+    "MolLogP",
+    "TPSA",
+    "HBD",
+    "HBA",
+    "RotB",
+    "AromaticRings",
+    "FractionCSP3",
+    "FormalCharge",
+    "RingCount",
+    "HeavyAtomCount",
+    "MolarRefractivity",
+    "NumHeteroatoms"
+  ],
+  "arms": [
+    "CSV_row_number",
+    "position_after_shuffle",
+    "SMILES_length",
+    "first_SMILES_char",
+    "RDKit_13_descriptors",
+    "quantum_78_SMILES_order",
+    "quantum_78_chemical_coverage"
+  ],
+  "caveat": "row number and source SMILES are dataset provenance, not molecular structure"
+}

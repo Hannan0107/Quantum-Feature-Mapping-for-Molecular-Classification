@@ -1,0 +1,17 @@
+{
+  "n_valid_rows_before_deduplication": 1687,
+  "n_conflicting_structures_removed": 9,
+  "n_unique_structures": 1615,
+  "n_balanced_molecules": 250,
+  "n_splits": 5,
+  "split": "StratifiedGroupKFold by Bemis-Murcko scaffold; acyclic molecules share one group",
+  "n_murcko_groups": 182,
+  "randomized_smiles_per_molecule": 4,
+  "molecules_with_four_distinct_randomized_smiles": 246,
+  "total_distinct_randomized_smiles": 990,
+  "molecules_with_at_least_two_randomized_smiles": 248,
+  "randomized_evaluation": "models trained on canonical SMILES; test molecules evaluated through randomized equivalent traversals",
+  "classifier": "StandardScaler + RBF-SVC, C=10",
+  "readout": "exact NumPy statevector; 78 features (12 Zi + 66 ZiZj)",
+  "source_note": "one balanced canonical-deduplicated BBBP sample of 250 molecules; descriptive small-sample evaluation"
+}
