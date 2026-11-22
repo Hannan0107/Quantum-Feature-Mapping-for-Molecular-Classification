@@ -1,6 +1,0 @@
-{
-  "char_ngram_auc_source": 0.8869959677419356,
-  "char_ngram_auc_canonical": 0.7880040322580645,
-  "mean_fraction_of_atom_positions_changed_by_canonicalization": 0.22264444444444445,
-  "molecules_with_a_changed_position": 0.656
-}

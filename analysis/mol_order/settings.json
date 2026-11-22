@@ -1,9 +1,0 @@
-{
-  "n_valid_rows_before_deduplication": 250,
-  "n_conflicting_structures_removed": 0,
-  "n_unique_structures": 250,
-  "n_balanced_molecules": 250,
-  "n_mol_files": 500,
-  "mol_directory": "data/bbbp_mol",
-  "rule": "first ten heavy atoms of the MOL atom block -> q0..q9"
-}
