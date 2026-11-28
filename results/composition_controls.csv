@@ -1,0 +1,5 @@
+control,auc,auc_ci_low,auc_ci_high,balanced_accuracy,f1
+size_only,0.5877,0.5545,0.6219,0.5636,0.8745
+whole_molecule_composition,0.8133,0.7887,0.8384,0.7311,0.9055
+canonical_backbone_composition,0.7417,0.7134,0.7695,0.647,0.8892
+chemical_backbone_composition,0.7195,0.6904,0.7501,0.6347,0.8832

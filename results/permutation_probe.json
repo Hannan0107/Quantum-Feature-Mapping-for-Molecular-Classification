@@ -1,0 +1,113 @@
+{
+  "config": {
+    "n_molecules": 1955,
+    "n_folds": 5,
+    "fold_seed": 42
+  },
+  "arms": [
+    {
+      "arm": "source_permuted_seed0",
+      "order": "source_permuted",
+      "strip_salts": true,
+      "seed": 0,
+      "auc": 0.7648,
+      "auc_ci_low": 0.7373,
+      "auc_ci_high": 0.791,
+      "balanced_accuracy": 0.6716,
+      "f1": 0.87
+    },
+    {
+      "arm": "source_permuted_seed1",
+      "order": "source_permuted",
+      "strip_salts": true,
+      "seed": 1,
+      "auc": 0.7487,
+      "auc_ci_low": 0.7228,
+      "auc_ci_high": 0.7734,
+      "balanced_accuracy": 0.6536,
+      "f1": 0.8648
+    },
+    {
+      "arm": "source_permuted_seed2",
+      "order": "source_permuted",
+      "strip_salts": true,
+      "seed": 2,
+      "auc": 0.7626,
+      "auc_ci_low": 0.7363,
+      "auc_ci_high": 0.7896,
+      "balanced_accuracy": 0.6921,
+      "f1": 0.877
+    },
+    {
+      "arm": "canonical_permuted_seed0",
+      "order": "canonical_permuted",
+      "strip_salts": true,
+      "seed": 0,
+      "auc": 0.76,
+      "auc_ci_low": 0.734,
+      "auc_ci_high": 0.7863,
+      "balanced_accuracy": 0.6702,
+      "f1": 0.8694
+    },
+    {
+      "arm": "canonical_permuted_seed1",
+      "order": "canonical_permuted",
+      "strip_salts": true,
+      "seed": 1,
+      "auc": 0.7472,
+      "auc_ci_low": 0.7224,
+      "auc_ci_high": 0.7727,
+      "balanced_accuracy": 0.6771,
+      "f1": 0.8714
+    },
+    {
+      "arm": "canonical_permuted_seed2",
+      "order": "canonical_permuted",
+      "strip_salts": true,
+      "seed": 2,
+      "auc": 0.753,
+      "auc_ci_low": 0.7276,
+      "auc_ci_high": 0.7799,
+      "balanced_accuracy": 0.6649,
+      "f1": 0.8744
+    }
+  ],
+  "diagnostics": [
+    {
+      "arm": "source_permuted_seed0",
+      "mean_gates": 29.08,
+      "mean_backbone_edges": 4.37,
+      "mean_heteroatoms": 2.5
+    },
+    {
+      "arm": "source_permuted_seed1",
+      "mean_gates": 28.55,
+      "mean_backbone_edges": 4.86,
+      "mean_heteroatoms": 2.51
+    },
+    {
+      "arm": "source_permuted_seed2",
+      "mean_gates": 27.12,
+      "mean_backbone_edges": 4.9,
+      "mean_heteroatoms": 2.5
+    },
+    {
+      "arm": "canonical_permuted_seed0",
+      "mean_gates": 29.08,
+      "mean_backbone_edges": 4.37,
+      "mean_heteroatoms": 2.5
+    },
+    {
+      "arm": "canonical_permuted_seed1",
+      "mean_gates": 28.55,
+      "mean_backbone_edges": 4.86,
+      "mean_heteroatoms": 2.51
+    },
+    {
+      "arm": "canonical_permuted_seed2",
+      "mean_gates": 27.12,
+      "mean_backbone_edges": 4.9,
+      "mean_heteroatoms": 2.5
+    }
+  ]
+}

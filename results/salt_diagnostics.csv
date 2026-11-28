@@ -1,0 +1,4 @@
+seed,n_molecules,n_multifragment,backbones_with_counterion,fraction_with_counterion,label_rate_with_counterion,label_rate_without_counterion
+0,1955,98,98,0.0501,0.6122,0.7722
+1,1955,98,20,0.0102,0.75,0.7643
+2,1955,98,98,0.0501,0.6122,0.7722

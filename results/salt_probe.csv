@@ -1,0 +1,7 @@
+arm,order,strip_salts,seed,auc,auc_ci_low,auc_ci_high,balanced_accuracy,f1
+source_random_seed0,source_random,False,0,0.8281,0.8052,0.8508,0.7404,0.8948
+source_random_seed1,source_random,False,1,0.8002,0.7768,0.8245,0.7096,0.8836
+source_random_seed2,source_random,False,2,0.8316,0.8103,0.8545,0.7458,0.8962
+source_random_stripped_seed0,source_random,True,0,0.834,0.8104,0.8563,0.7479,0.8976
+source_random_stripped_seed1,source_random,True,1,0.8013,0.7777,0.8252,0.7145,0.8862
+source_random_stripped_seed2,source_random,True,2,0.8381,0.8158,0.8611,0.7497,0.8986

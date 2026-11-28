@@ -1,0 +1,15 @@
+Input rows: 2050 (data/raw/BBBP.csv)
+RDKit version: 2024.03.5
+Stage 1 - invalid SMILES removed: 11 (remaining 2039)
+Stage 2 - salt/solvent fragments stripped: 105 rows (kept largest organic fragment)
+Stage 2 - fragment audit: 2202 fragments; ambiguous parent rows: 2
+Stage 3 - canonical isomeric SMILES generated: 2039
+Stage 4 - elements present: B, Br, C, Cl, F, I, N, O, P, S
+Stage 4 - elements missing from Hannan's table: Br, I, P
+Stage 4 - elements missing after explicit extension: none
+Stage 5a - label-conflicting structures: 11 (22 rows excluded)
+Stage 5b - duplicate rows collapsed: 62
+Stage 5 - unique structures remaining: 1955 (0: 461, 1: 1494)
+Stage 6 - stereoisomer skeletons with conflicting labels: 6 rows flagged
+Stage 7 - tautomer groups with conflicting labels: 8 rows flagged
+Stage 8 - previous-250 molecules surviving: 250 / 250

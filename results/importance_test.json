@@ -1,0 +1,58 @@
+{
+  "config": {
+    "n_molecules": 1955,
+    "folds": 5,
+    "fold_seed": 42,
+    "tail_mode": "paper",
+    "classifier": "RBF SVC C=10",
+    "importance_weights": {
+      "tpsa": 0.1111111111111111,
+      "logp": 0.1111111111111111,
+      "mr": 0.1111111111111111,
+      "hbd": 0.1111111111111111,
+      "hba": 0.1111111111111111,
+      "gasteiger": 0.1111111111111111,
+      "formal": 0.1111111111111111,
+      "hetero": 0.1111111111111111,
+      "aromatic": 0.1111111111111111
+    }
+  },
+  "arms": [
+    {
+      "arm": "paper_smiles_order",
+      "seed": null,
+      "accuracy": 0.8501,
+      "balanced_accuracy": 0.776,
+      "auc": 0.8559,
+      "shuffle_accuracy_mean": null,
+      "f1": null
+    },
+    {
+      "arm": "random_backbone",
+      "seed": null,
+      "accuracy": 0.7587,
+      "balanced_accuracy": 0.6116,
+      "auc": 0.6886,
+      "shuffle_accuracy_mean": null,
+      "f1": null
+    },
+    {
+      "arm": "importance",
+      "seed": null,
+      "accuracy": 0.8194,
+      "balanced_accuracy": 0.7259,
+      "auc": 0.7964,
+      "shuffle_accuracy_mean": 0.8448,
+      "f1": 0.8843
+    },
+    {
+      "arm": "community_importance",
+      "seed": null,
+      "accuracy": 0.7887,
+      "balanced_accuracy": 0.69,
+      "auc": 0.7745,
+      "shuffle_accuracy_mean": 0.8059,
+      "f1": 0.8638
+    }
+  ]
+}

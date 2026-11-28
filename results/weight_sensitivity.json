@@ -1,0 +1,192 @@
+{
+  "config": {
+    "n_molecules": 1955,
+    "folds": 5,
+    "fold_seed": 42,
+    "note": "weights are fixed priors, never optimised on BBBP labels"
+  },
+  "equal_weights": {
+    "tpsa": 0.1111111111111111,
+    "logp": 0.1111111111111111,
+    "mr": 0.1111111111111111,
+    "hbd": 0.1111111111111111,
+    "hba": 0.1111111111111111,
+    "gasteiger": 0.1111111111111111,
+    "formal": 0.1111111111111111,
+    "hetero": 0.1111111111111111,
+    "aromatic": 0.1111111111111111
+  },
+  "literature_priors": {
+    "tpsa": 0.2,
+    "logp": 0.2,
+    "mr": 0.1,
+    "hbd": 0.15,
+    "hba": 0.1,
+    "gasteiger": 0.1,
+    "formal": 0.05,
+    "hetero": 0.05,
+    "aromatic": 0.05
+  },
+  "equal_weights_auc": 0.7745,
+  "literature_priors_auc": 0.7841,
+  "random_auc_mean": 0.7584,
+  "random_auc_std": 0.0257,
+  "random_auc_min": 0.7095,
+  "random_auc_max": 0.8004,
+  "rows": [
+    {
+      "configuration": "equal_weights",
+      "weights": "{\"tpsa\": 0.111, \"logp\": 0.111, \"mr\": 0.111, \"hbd\": 0.111, \"hba\": 0.111, \"gasteiger\": 0.111, \"formal\": 0.111, \"hetero\": 0.111, \"aromatic\": 0.111}",
+      "accuracy": 0.7887,
+      "balanced_accuracy": 0.69,
+      "auc": 0.7745
+    },
+    {
+      "configuration": "literature_priors",
+      "weights": "{\"tpsa\": 0.2, \"logp\": 0.2, \"mr\": 0.1, \"hbd\": 0.15, \"hba\": 0.1, \"gasteiger\": 0.1, \"formal\": 0.05, \"hetero\": 0.05, \"aromatic\": 0.05}",
+      "accuracy": 0.8077,
+      "balanced_accuracy": 0.7099,
+      "auc": 0.7841
+    },
+    {
+      "configuration": "random_0",
+      "weights": "{\"tpsa\": 0.177, \"logp\": 0.172, \"mr\": 0.176, \"hbd\": 0.021, \"hba\": 0.006, \"gasteiger\": 0.107, \"formal\": 0.104, \"hetero\": 0.23, \"aromatic\": 0.006}",
+      "accuracy": 0.7898,
+      "balanced_accuracy": 0.6795,
+      "auc": 0.7526
+    },
+    {
+      "configuration": "random_1",
+      "weights": "{\"tpsa\": 0.171, \"logp\": 0.012, \"mr\": 0.178, \"hbd\": 0.283, \"hba\": 0.063, \"gasteiger\": 0.201, \"formal\": 0.025, \"hetero\": 0.015, \"aromatic\": 0.052}",
+      "accuracy": 0.8107,
+      "balanced_accuracy": 0.7164,
+      "auc": 0.7787
+    },
+    {
+      "configuration": "random_2",
+      "weights": "{\"tpsa\": 0.122, \"logp\": 0.056, \"mr\": 0.169, \"hbd\": 0.03, \"hba\": 0.249, \"gasteiger\": 0.166, \"formal\": 0.089, \"hetero\": 0.057, \"aromatic\": 0.061}",
+      "accuracy": 0.8026,
+      "balanced_accuracy": 0.7066,
+      "auc": 0.7798
+    },
+    {
+      "configuration": "random_3",
+      "weights": "{\"tpsa\": 0.017, \"logp\": 0.039, \"mr\": 0.148, \"hbd\": 0.084, \"hba\": 0.272, \"gasteiger\": 0.153, \"formal\": 0.051, \"hetero\": 0.099, \"aromatic\": 0.138}",
+      "accuracy": 0.7974,
+      "balanced_accuracy": 0.704,
+      "auc": 0.7752
+    },
+    {
+      "configuration": "random_4",
+      "weights": "{\"tpsa\": 0.05, \"logp\": 0.047, \"mr\": 0.128, \"hbd\": 0.043, \"hba\": 0.194, \"gasteiger\": 0.203, \"formal\": 0.158, \"hetero\": 0.011, \"aromatic\": 0.165}",
+      "accuracy": 0.7928,
+      "balanced_accuracy": 0.6957,
+      "auc": 0.7784
+    },
+    {
+      "configuration": "random_5",
+      "weights": "{\"tpsa\": 0.266, \"logp\": 0.22, \"mr\": 0.055, \"hbd\": 0.063, \"hba\": 0.032, \"gasteiger\": 0.069, \"formal\": 0.004, \"hetero\": 0.033, \"aromatic\": 0.258}",
+      "accuracy": 0.7831,
+      "balanced_accuracy": 0.6436,
+      "auc": 0.7272
+    },
+    {
+      "configuration": "random_6",
+      "weights": "{\"tpsa\": 0.412, \"logp\": 0.058, \"mr\": 0.029, \"hbd\": 0.041, \"hba\": 0.037, \"gasteiger\": 0.013, \"formal\": 0.112, \"hetero\": 0.142, \"aromatic\": 0.155}",
+      "accuracy": 0.798,
+      "balanced_accuracy": 0.7043,
+      "auc": 0.7873
+    },
+    {
+      "configuration": "random_7",
+      "weights": "{\"tpsa\": 0.384, \"logp\": 0.152, \"mr\": 0.119, \"hbd\": 0.075, \"hba\": 0.043, \"gasteiger\": 0.003, \"formal\": 0.069, \"hetero\": 0.045, \"aromatic\": 0.109}",
+      "accuracy": 0.7985,
+      "balanced_accuracy": 0.7024,
+      "auc": 0.7689
+    },
+    {
+      "configuration": "random_8",
+      "weights": "{\"tpsa\": 0.186, \"logp\": 0.03, \"mr\": 0.005, \"hbd\": 0.085, \"hba\": 0.234, \"gasteiger\": 0.075, \"formal\": 0.195, \"hetero\": 0.069, \"aromatic\": 0.12}",
+      "accuracy": 0.8102,
+      "balanced_accuracy": 0.7161,
+      "auc": 0.7835
+    },
+    {
+      "configuration": "random_9",
+      "weights": "{\"tpsa\": 0.068, \"logp\": 0.032, \"mr\": 0.034, \"hbd\": 0.028, \"hba\": 0.013, \"gasteiger\": 0.406, \"formal\": 0.106, \"hetero\": 0.091, \"aromatic\": 0.221}",
+      "accuracy": 0.7673,
+      "balanced_accuracy": 0.6407,
+      "auc": 0.7199
+    },
+    {
+      "configuration": "random_10",
+      "weights": "{\"tpsa\": 0.035, \"logp\": 0.359, \"mr\": 0.242, \"hbd\": 0.062, \"hba\": 0.038, \"gasteiger\": 0.099, \"formal\": 0.057, \"hetero\": 0.014, \"aromatic\": 0.094}",
+      "accuracy": 0.7862,
+      "balanced_accuracy": 0.6561,
+      "auc": 0.7575
+    },
+    {
+      "configuration": "random_11",
+      "weights": "{\"tpsa\": 0.166, \"logp\": 0.075, \"mr\": 0.228, \"hbd\": 0.151, \"hba\": 0.083, \"gasteiger\": 0.137, \"formal\": 0.054, \"hetero\": 0.079, \"aromatic\": 0.028}",
+      "accuracy": 0.798,
+      "balanced_accuracy": 0.7036,
+      "auc": 0.7642
+    },
+    {
+      "configuration": "random_12",
+      "weights": "{\"tpsa\": 0.03, \"logp\": 0.297, \"mr\": 0.019, \"hbd\": 0.026, \"hba\": 0.043, \"gasteiger\": 0.134, \"formal\": 0.057, \"hetero\": 0.095, \"aromatic\": 0.299}",
+      "accuracy": 0.7683,
+      "balanced_accuracy": 0.6272,
+      "auc": 0.7095
+    },
+    {
+      "configuration": "random_13",
+      "weights": "{\"tpsa\": 0.255, \"logp\": 0.194, \"mr\": 0.028, \"hbd\": 0.197, \"hba\": 0.075, \"gasteiger\": 0.021, \"formal\": 0.066, \"hetero\": 0.012, \"aromatic\": 0.152}",
+      "accuracy": 0.7898,
+      "balanced_accuracy": 0.6682,
+      "auc": 0.7448
+    },
+    {
+      "configuration": "random_14",
+      "weights": "{\"tpsa\": 0.097, \"logp\": 0.029, \"mr\": 0.005, \"hbd\": 0.273, \"hba\": 0.081, \"gasteiger\": 0.149, \"formal\": 0.035, \"hetero\": 0.168, \"aromatic\": 0.164}",
+      "accuracy": 0.778,
+      "balanced_accuracy": 0.6725,
+      "auc": 0.7507
+    },
+    {
+      "configuration": "random_15",
+      "weights": "{\"tpsa\": 0.008, \"logp\": 0.486, \"mr\": 0.06, \"hbd\": 0.125, \"hba\": 0.022, \"gasteiger\": 0.088, \"formal\": 0.026, \"hetero\": 0.144, \"aromatic\": 0.041}",
+      "accuracy": 0.7673,
+      "balanced_accuracy": 0.6317,
+      "auc": 0.7102
+    },
+    {
+      "configuration": "random_16",
+      "weights": "{\"tpsa\": 0.099, \"logp\": 0.067, \"mr\": 0.096, \"hbd\": 0.06, \"hba\": 0.078, \"gasteiger\": 0.004, \"formal\": 0.202, \"hetero\": 0.32, \"aromatic\": 0.074}",
+      "accuracy": 0.799,
+      "balanced_accuracy": 0.6937,
+      "auc": 0.7646
+    },
+    {
+      "configuration": "random_17",
+      "weights": "{\"tpsa\": 0.296, \"logp\": 0.015, \"mr\": 0.242, \"hbd\": 0.032, \"hba\": 0.058, \"gasteiger\": 0.212, \"formal\": 0.011, \"hetero\": 0.017, \"aromatic\": 0.117}",
+      "accuracy": 0.7887,
+      "balanced_accuracy": 0.681,
+      "auc": 0.7488
+    },
+    {
+      "configuration": "random_18",
+      "weights": "{\"tpsa\": 0.16, \"logp\": 0.047, \"mr\": 0.072, \"hbd\": 0.122, \"hba\": 0.309, \"gasteiger\": 0.058, \"formal\": 0.124, \"hetero\": 0.058, \"aromatic\": 0.05}",
+      "accuracy": 0.8113,
+      "balanced_accuracy": 0.7145,
+      "auc": 0.8004
+    },
+    {
+      "configuration": "random_19",
+      "weights": "{\"tpsa\": 0.231, \"logp\": 0.06, \"mr\": 0.145, \"hbd\": 0.033, \"hba\": 0.02, \"gasteiger\": 0.124, \"formal\": 0.154, \"hetero\": 0.103, \"aromatic\": 0.129}",
+      "accuracy": 0.7974,
+      "balanced_accuracy": 0.701,
+      "auc": 0.7664
+    }
+  ]
+}

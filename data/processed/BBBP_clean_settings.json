@@ -1,0 +1,59 @@
+{
+  "source": "data/raw/BBBP.csv",
+  "rdkit_version": "2024.03.5",
+  "input_rows": 2050,
+  "invalid_rows": 11,
+  "salt_rows_stripped": 105,
+  "ambiguous_parent_rows": 2,
+  "label_conflicting_structures": 11,
+  "label_conflicting_rows": 22,
+  "duplicates_removed": 62,
+  "stereo_conflict_rows": 6,
+  "tautomer_conflict_rows": 8,
+  "charged_structures": 34,
+  "molecules_beyond_10": 1851,
+  "previous_250_total": 250,
+  "previous_250_surviving": 250,
+  "final_rows": 1955,
+  "label_counts": {
+    "0": 461,
+    "1": 1494
+  },
+  "elements": {
+    "present": [
+      "B",
+      "Br",
+      "C",
+      "Cl",
+      "F",
+      "I",
+      "N",
+      "O",
+      "P",
+      "S"
+    ],
+    "missing_from_hannan": [
+      "Br",
+      "I",
+      "P"
+    ],
+    "missing_after_extension": []
+  },
+  "decisions": {
+    "salts": "keep the largest carbon-containing fragment; ties by heavy atoms, heteroatoms and canonical SMILES; ties are flagged",
+    "charges": "formal charges kept; structures are never neutralised",
+    "tautomers": "not canonicalised or merged; only label-conflicting tautomer groups are flagged",
+    "stereo": "isomeric SMILES preserved; stereo-blind feature map limitation flagged",
+    "conflicting_labels": "structures with both labels excluded; no external evidence to choose one",
+    "duplicates": "first occurrence kept",
+    "elements": "explicit Pauling table, no numeric fallback; missing elements raise an error"
+  },
+  "outputs": {
+    "clean": "data/processed/BBBP_clean_full.csv",
+    "audit": "data/processed/BBBP_clean_audit.csv",
+    "invalid": "data/processed/BBBP_invalid_smiles.csv",
+    "fragments": "data/processed/BBBP_fragment_audit.csv",
+    "log": "data/processed/BBBP_clean_log.txt",
+    "settings": "data/processed/BBBP_clean_settings.json"
+  }
+}

@@ -1,0 +1,7 @@
+arm,mean_gates,mean_backbone_edges,mean_heteroatoms
+source_permuted_seed0,29.08,4.37,2.5
+source_permuted_seed1,28.55,4.86,2.51
+source_permuted_seed2,27.12,4.9,2.5
+canonical_permuted_seed0,29.08,4.37,2.5
+canonical_permuted_seed1,28.55,4.86,2.51
+canonical_permuted_seed2,27.12,4.9,2.5

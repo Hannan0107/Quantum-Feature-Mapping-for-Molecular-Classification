@@ -1,0 +1,12 @@
+source_num,name,smiles,label
+60,15,O=N([O-])C1=C(CN=C1NCCSCc2ncccc2)Cc3ccccc3,1
+62,22767,c1(nc(NC(N)=[NH2])sc1)CSCCNC(=[NH]C#N)NC,1
+393,ICI17148,Cc1nc(sc1)\[NH]=C(\N)N,1
+616,5-6,s1cc(CSCCN\C(NC)=[NH]\C#N)nc1\[NH]=C(\N)N,1
+644,12,c1c(c(ncc1)CSCCN\C(=[NH]\C#N)NCC)Br,0
+647,16,n1c(csc1\[NH]=C(\N)N)c1ccccc1,1
+648,17,n1c(csc1\[NH]=C(\N)N)c1cccc(c1)N,0
+649,18,n1c(csc1\[NH]=C(\N)N)c1cccc(c1)NC(C)=O,0
+650,19,n1c(csc1\[NH]=C(\N)N)c1cccc(c1)N\C(NC)=[NH]\C#N,0
+651,2,s1cc(nc1\[NH]=C(\N)N)C,1
+687,9-C17,c1(cc(N\C(=[NH]\c2cccc(c2)CC)C)ccc1)CC,1

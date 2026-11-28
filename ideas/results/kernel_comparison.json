@@ -1,0 +1,96 @@
+{
+  "config": {
+    "n_molecules": 1955,
+    "n_scaffold_groups": 1016,
+    "folds": 5,
+    "fold_seed": 42,
+    "svm": "precomputed RBF kernel sum, C=10.0",
+    "scaling": "in-fold StandardScaler; gamma=1/(n_features*var) from train fold",
+    "blocks": [
+      "quantum_78_pauli",
+      "morgan_256_ecfp4",
+      "descriptors_22"
+    ]
+  },
+  "arms": [
+    {
+      "arm": "quantum",
+      "kernel_weights": "(1, 0, 0)",
+      "auc": 0.7745,
+      "auc_ci_low": 0.7477,
+      "auc_ci_high": 0.7996,
+      "balanced_accuracy": 0.69,
+      "accuracy": 0.7887,
+      "TN": 232,
+      "FP": 229,
+      "FN": 184,
+      "TP": 1310
+    },
+    {
+      "arm": "morgan",
+      "kernel_weights": "(0, 1, 0)",
+      "auc": 0.8981,
+      "auc_ci_low": 0.8802,
+      "auc_ci_high": 0.9149,
+      "balanced_accuracy": 0.7831,
+      "accuracy": 0.8783,
+      "TN": 278,
+      "FP": 183,
+      "FN": 55,
+      "TP": 1439
+    },
+    {
+      "arm": "descriptors",
+      "kernel_weights": "(0, 0, 1)",
+      "auc": 0.8869,
+      "auc_ci_low": 0.8678,
+      "auc_ci_high": 0.9039,
+      "balanced_accuracy": 0.7672,
+      "accuracy": 0.8619,
+      "TN": 271,
+      "FP": 190,
+      "FN": 80,
+      "TP": 1414
+    },
+    {
+      "arm": "morgan+descriptors",
+      "kernel_weights": "(0, 1, 1)",
+      "auc": 0.9124,
+      "auc_ci_low": 0.8952,
+      "auc_ci_high": 0.9288,
+      "balanced_accuracy": 0.7923,
+      "accuracy": 0.8762,
+      "TN": 292,
+      "FP": 169,
+      "FN": 73,
+      "TP": 1421
+    },
+    {
+      "arm": "quantum+morgan",
+      "kernel_weights": "(1, 1, 0)",
+      "auc": 0.8851,
+      "auc_ci_low": 0.8651,
+      "auc_ci_high": 0.9034,
+      "balanced_accuracy": 0.771,
+      "accuracy": 0.8655,
+      "TN": 273,
+      "FP": 188,
+      "FN": 75,
+      "TP": 1419
+    },
+    {
+      "arm": "all_three",
+      "kernel_weights": "(1, 1, 1)",
+      "auc": 0.8996,
+      "auc_ci_low": 0.8802,
+      "auc_ci_high": 0.9176,
+      "balanced_accuracy": 0.7822,
+      "accuracy": 0.8665,
+      "TN": 287,
+      "FP": 174,
+      "FN": 87,
+      "TP": 1407
+    }
+  ],
+  "note": "weights (0,1,1) chosen a priori as an equal classical kernel sum, not tuned on test"
+}

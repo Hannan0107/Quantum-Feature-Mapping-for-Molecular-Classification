@@ -1,0 +1,99 @@
+{
+  "config": {
+    "n_molecules": 1955,
+    "n_folds": 5,
+    "fold_seed": 42,
+    "svm": "RBF SVC C=10.0, StandardScaler in-fold",
+    "readout": "78 Pauli moments",
+    "tail_mode": "paper",
+    "panels": [
+      "pauling",
+      "new_features"
+    ],
+    "arms": [
+      "smiles_order",
+      "random_backbone",
+      "community_importance"
+    ]
+  },
+  "results": [
+    {
+      "embedding": "pauling",
+      "arm": "smiles_order",
+      "angle_property": "pauling",
+      "selection": "first ten atoms in the deposited SMILES parse order",
+      "auc": 0.8602,
+      "accuracy": 0.8399,
+      "balanced_accuracy": 0.7603,
+      "TN": 281,
+      "FP": 180,
+      "FN": 133,
+      "TP": 1361
+    },
+    {
+      "embedding": "pauling",
+      "arm": "random_backbone",
+      "angle_property": "pauling",
+      "selection": "ten random heavy atoms from the same parsed molecule (seed 0)",
+      "auc": 0.6342,
+      "accuracy": 0.7228,
+      "balanced_accuracy": 0.5764,
+      "TN": 138,
+      "FP": 323,
+      "FN": 219,
+      "TP": 1275
+    },
+    {
+      "embedding": "pauling",
+      "arm": "community_importance",
+      "angle_property": "pauling",
+      "selection": "best RDKit BBBP scorer per graph community, then global ranking",
+      "auc": 0.7745,
+      "accuracy": 0.7887,
+      "balanced_accuracy": 0.69,
+      "TN": 232,
+      "FP": 229,
+      "FN": 184,
+      "TP": 1310
+    },
+    {
+      "embedding": "new_features",
+      "arm": "smiles_order",
+      "angle_property": "importance",
+      "selection": "first ten atoms in the deposited SMILES parse order",
+      "auc": 0.8666,
+      "accuracy": 0.8353,
+      "balanced_accuracy": 0.7602,
+      "TN": 285,
+      "FP": 176,
+      "FN": 146,
+      "TP": 1348
+    },
+    {
+      "embedding": "new_features",
+      "arm": "random_backbone",
+      "angle_property": "importance",
+      "selection": "ten random heavy atoms from the same parsed molecule (seed 0)",
+      "auc": 0.6754,
+      "accuracy": 0.7616,
+      "balanced_accuracy": 0.6093,
+      "TN": 148,
+      "FP": 313,
+      "FN": 153,
+      "TP": 1341
+    },
+    {
+      "embedding": "new_features",
+      "arm": "community_importance",
+      "angle_property": "importance",
+      "selection": "best RDKit BBBP scorer per graph community, then global ranking",
+      "auc": 0.7315,
+      "accuracy": 0.7877,
+      "balanced_accuracy": 0.6751,
+      "TN": 213,
+      "FP": 248,
+      "FN": 167,
+      "TP": 1327
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "config": {
+    "n_molecules": 1955,
+    "n_scaffold_groups": 1016,
+    "n_folds": 5,
+    "fold_seed": 42,
+    "svm": "RBF SVC C=10.0, StandardScaler in-fold",
+    "tail_mode": "global",
+    "pca_note": "PC1/PC2 come from the 78 moments; scaler and PCA fitted in each train fold"
+  },
+  "arms": [
+    {
+      "arm": "source",
+      "atom_order": "source",
+      "angle_property": "pauling",
+      "features": 78,
+      "classifier_features": 78,
+      "auc": 0.8805,
+      "auc_ci_low": 0.8621,
+      "auc_ci_high": 0.8991,
+      "balanced_accuracy": 0.7956,
+      "f1": 0.9107
+    },
+    {
+      "arm": "source_random",
+      "atom_order": "source_random",
+      "angle_property": "pauling",
+      "features": 78,
+      "classifier_features": 78,
+      "auc": 0.8281,
+      "auc_ci_low": 0.8052,
+      "auc_ci_high": 0.8508,
+      "balanced_accuracy": 0.7404,
+      "f1": 0.8948
+    },
+    {
+      "arm": "pca2",
+      "atom_order": "canonical",
+      "angle_property": "pauling",
+      "features": 78,
+      "classifier_features": 2,
+      "auc": 0.5933,
+      "auc_ci_low": 0.5647,
+      "auc_ci_high": 0.622,
+      "balanced_accuracy": 0.5,
+      "f1": 0.8663
+    },
+    {
+      "arm": "tpsa",
+      "atom_order": "canonical",
+      "angle_property": "tpsa",
+      "features": 78,
+      "classifier_features": 78,
+      "auc": 0.8073,
+      "auc_ci_low": 0.7813,
+      "auc_ci_high": 0.8301,
+      "balanced_accuracy": 0.7202,
+      "f1": 0.8888
+    }
+  ]
+}

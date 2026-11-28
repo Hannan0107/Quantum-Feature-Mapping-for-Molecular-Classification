@@ -1,0 +1,97 @@
+{
+  "config": {
+    "n_molecules": 1955,
+    "n_scaffold_groups": 1016,
+    "folds": 5,
+    "fold_seed": 42,
+    "classifier": "RBF SVC C=10, StandardScaler in-fold",
+    "readout": "78 Pauli moments, global tail"
+  },
+  "arms": [
+    {
+      "arm": "source",
+      "auc": 0.8805,
+      "balanced_accuracy": 0.7956,
+      "f1": 0.9107,
+      "pc1_pc2_variance": 0.4508
+    },
+    {
+      "arm": "source_random_seed0",
+      "auc": 0.8281,
+      "balanced_accuracy": 0.7404,
+      "f1": 0.8948,
+      "pc1_pc2_variance": 0.3992
+    },
+    {
+      "arm": "source_random_seed1",
+      "auc": 0.8002,
+      "balanced_accuracy": 0.7096,
+      "f1": 0.8836,
+      "pc1_pc2_variance": 0.4024
+    },
+    {
+      "arm": "source_random_seed2",
+      "auc": 0.8316,
+      "balanced_accuracy": 0.7458,
+      "f1": 0.8962,
+      "pc1_pc2_variance": 0.4024
+    },
+    {
+      "arm": "canonical",
+      "auc": 0.8015,
+      "balanced_accuracy": 0.7323,
+      "f1": 0.8904,
+      "pc1_pc2_variance": 0.4298
+    },
+    {
+      "arm": "chemical",
+      "auc": 0.7664,
+      "balanced_accuracy": 0.6892,
+      "f1": 0.8729,
+      "pc1_pc2_variance": 0.3935
+    },
+    {
+      "arm": "property_tpsa",
+      "auc": 0.7792,
+      "balanced_accuracy": 0.7297,
+      "f1": 0.8831,
+      "pc1_pc2_variance": 0.4191
+    },
+    {
+      "arm": "property_pauling",
+      "auc": 0.7868,
+      "balanced_accuracy": 0.7355,
+      "f1": 0.8849,
+      "pc1_pc2_variance": 0.4336
+    },
+    {
+      "arm": "property_hetero",
+      "auc": 0.7714,
+      "balanced_accuracy": 0.7123,
+      "f1": 0.8829,
+      "pc1_pc2_variance": 0.4188
+    },
+    {
+      "arm": "property_charge",
+      "auc": 0.8,
+      "balanced_accuracy": 0.7254,
+      "f1": 0.8855,
+      "pc1_pc2_variance": 0.4254
+    },
+    {
+      "arm": "property_role",
+      "auc": 0.7908,
+      "balanced_accuracy": 0.7375,
+      "f1": 0.8977,
+      "pc1_pc2_variance": 0.5073
+    },
+    {
+      "arm": "property_mixed",
+      "auc": 0.7891,
+      "balanced_accuracy": 0.7277,
+      "f1": 0.8916,
+      "pc1_pc2_variance": 0.5082
+    }
+  ],
+  "electric_chemical_selection_note": "property_* arms rank heavy atoms by fixed RDKit per-atom values; no label information is used"
+}

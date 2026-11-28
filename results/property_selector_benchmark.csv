@@ -1,0 +1,13 @@
+arm,auc,balanced_accuracy,f1,pc1_pc2_variance
+source,0.8805,0.7956,0.9107,0.4508
+source_random_seed0,0.8281,0.7404,0.8948,0.3992
+source_random_seed1,0.8002,0.7096,0.8836,0.4024
+source_random_seed2,0.8316,0.7458,0.8962,0.4024
+canonical,0.8015,0.7323,0.8904,0.4298
+chemical,0.7664,0.6892,0.8729,0.3935
+property_tpsa,0.7792,0.7297,0.8831,0.4191
+property_pauling,0.7868,0.7355,0.8849,0.4336
+property_hetero,0.7714,0.7123,0.8829,0.4188
+property_charge,0.8,0.7254,0.8855,0.4254
+property_role,0.7908,0.7375,0.8977,0.5073
+property_mixed,0.7891,0.7277,0.8916,0.5082

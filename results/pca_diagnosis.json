@@ -1,0 +1,161 @@
+{
+  "config": {
+    "n_molecules": 1955,
+    "n_folds": 5,
+    "fold_seed": 42,
+    "class_balance": {
+      "0": 461,
+      "1": 1494
+    }
+  },
+  "truncation": [
+    {
+      "n_components": 1,
+      "class_weight": "None",
+      "auc": 0.5734,
+      "predicted_positive_fraction": 1.0,
+      "score_std": 0.0064
+    },
+    {
+      "n_components": 2,
+      "class_weight": "None",
+      "auc": 0.5933,
+      "predicted_positive_fraction": 1.0,
+      "score_std": 0.092
+    },
+    {
+      "n_components": 3,
+      "class_weight": "None",
+      "auc": 0.623,
+      "predicted_positive_fraction": 1.0,
+      "score_std": 0.1106
+    },
+    {
+      "n_components": 5,
+      "class_weight": "None",
+      "auc": 0.6518,
+      "predicted_positive_fraction": 0.9703,
+      "score_std": 0.3847
+    },
+    {
+      "n_components": 10,
+      "class_weight": "None",
+      "auc": 0.6957,
+      "predicted_positive_fraction": 0.8803,
+      "score_std": 0.7702
+    },
+    {
+      "n_components": 20,
+      "class_weight": "None",
+      "auc": 0.7825,
+      "predicted_positive_fraction": 0.8246,
+      "score_std": 0.9419
+    },
+    {
+      "n_components": 40,
+      "class_weight": "None",
+      "auc": 0.8018,
+      "predicted_positive_fraction": 0.8077,
+      "score_std": 0.9572
+    },
+    {
+      "n_components": 78,
+      "class_weight": "None",
+      "auc": 0.8015,
+      "predicted_positive_fraction": 0.8041,
+      "score_std": 0.9473
+    },
+    {
+      "n_components": 1,
+      "class_weight": "balanced",
+      "auc": 0.6318,
+      "predicted_positive_fraction": 0.398,
+      "score_std": 0.8219
+    },
+    {
+      "n_components": 2,
+      "class_weight": "balanced",
+      "auc": 0.6537,
+      "predicted_positive_fraction": 0.49,
+      "score_std": 0.8319
+    },
+    {
+      "n_components": 3,
+      "class_weight": "balanced",
+      "auc": 0.675,
+      "predicted_positive_fraction": 0.5151,
+      "score_std": 0.9049
+    },
+    {
+      "n_components": 5,
+      "class_weight": "balanced",
+      "auc": 0.6892,
+      "predicted_positive_fraction": 0.5422,
+      "score_std": 1.0021
+    },
+    {
+      "n_components": 10,
+      "class_weight": "balanced",
+      "auc": 0.7286,
+      "predicted_positive_fraction": 0.6256,
+      "score_std": 1.1593
+    },
+    {
+      "n_components": 20,
+      "class_weight": "balanced",
+      "auc": 0.7854,
+      "predicted_positive_fraction": 0.711,
+      "score_std": 1.1242
+    },
+    {
+      "n_components": 40,
+      "class_weight": "balanced",
+      "auc": 0.8,
+      "predicted_positive_fraction": 0.7151,
+      "score_std": 1.0952
+    },
+    {
+      "n_components": 78,
+      "class_weight": "balanced",
+      "auc": 0.8007,
+      "predicted_positive_fraction": 0.7299,
+      "score_std": 1.0436
+    }
+  ],
+  "components": [
+    {
+      "component": "PC1",
+      "explained_variance_ratio": 0.3207,
+      "corr_with_label": 0.1692,
+      "corr_with_heavy_atom_count": -0.3022
+    },
+    {
+      "component": "PC2",
+      "explained_variance_ratio": 0.1091,
+      "corr_with_label": 0.0249,
+      "corr_with_heavy_atom_count": 0.1401
+    },
+    {
+      "component": "PC3",
+      "explained_variance_ratio": 0.0695,
+      "corr_with_label": -0.0131,
+      "corr_with_heavy_atom_count": 0.0091
+    },
+    {
+      "component": "PC4",
+      "explained_variance_ratio": 0.057,
+      "corr_with_label": -0.0033,
+      "corr_with_heavy_atom_count": -0.069
+    }
+  ],
+  "univariate_moment_auc": {
+    "max": 0.784,
+    "mean": 0.5623,
+    "best_index": 10
+  },
+  "rotation_check": {
+    "auc_raw_78": 0.8015,
+    "auc_rotated_78": 0.8015,
+    "note": "78 PCs are an orthogonal rotation of the 78 standardised moments; the RBF kernel is invariant to it"
+  }
+}

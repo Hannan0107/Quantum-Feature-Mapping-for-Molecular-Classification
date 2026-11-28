@@ -1,0 +1,293 @@
+{
+  "config": {
+    "n_molecules": 1955,
+    "n_random_seeds": 20,
+    "scaffold_folds": 5,
+    "shuffle_splits": 10,
+    "class_balance": {
+      "0": 461,
+      "1": 1494
+    },
+    "trivial_baseline_accuracy": 0.76419437,
+    "paper_rule": "q0-q9 = first ten atoms in RDKit SMILES-parse order",
+    "random_rule": "q0-q9 = ten randomly chosen heavy atoms of the same parsed molecule"
+  },
+  "paper": {
+    "accuracy": 0.8501,
+    "balanced_accuracy": 0.776,
+    "auc": 0.8559,
+    "f1": 0.9033
+  },
+  "paper_shuffle": {
+    "accuracy_mean": 0.8558,
+    "accuracy_std": 0.0171,
+    "balanced_accuracy_mean": 0.7827,
+    "auc_mean": 0.8727
+  },
+  "random_scaffold_mean": {
+    "accuracy": 0.7587,
+    "balanced_accuracy": 0.6116,
+    "auc": 0.6886,
+    "f1": 0.8494
+  },
+  "random_scaffold_std": {
+    "accuracy": 0.018,
+    "balanced_accuracy": 0.0304,
+    "auc": 0.0418,
+    "f1": 0.0107
+  },
+  "rows": [
+    {
+      "arm": "paper_smiles_order",
+      "seed": null,
+      "accuracy": 0.8501,
+      "balanced_accuracy": 0.776,
+      "auc": 0.8559,
+      "f1": 0.9033,
+      "shuffle_accuracy_mean": 0.8558,
+      "shuffle_accuracy_std": 0.0171,
+      "shuffle_balanced_accuracy_mean": 0.7827,
+      "shuffle_auc_mean": 0.8727
+    },
+    {
+      "arm": "random_backbone",
+      "seed": 0.0,
+      "accuracy": 0.7407,
+      "balanced_accuracy": 0.5828,
+      "auc": 0.6399,
+      "f1": 0.8386,
+      "shuffle_accuracy_mean": 0.7499,
+      "shuffle_accuracy_std": 0.0211,
+      "shuffle_balanced_accuracy_mean": 0.5983,
+      "shuffle_auc_mean": 0.6873
+    },
+    {
+      "arm": "random_backbone",
+      "seed": 1.0,
+      "accuracy": 0.7765,
+      "balanced_accuracy": 0.6378,
+      "auc": 0.7011,
+      "f1": 0.8602,
+      "shuffle_accuracy_mean": 0.79,
+      "shuffle_accuracy_std": 0.0194,
+      "shuffle_balanced_accuracy_mean": 0.6558,
+      "shuffle_auc_mean": 0.7422
+    },
+    {
+      "arm": "random_backbone",
+      "seed": 2.0,
+      "accuracy": 0.7545,
+      "balanced_accuracy": 0.6031,
+      "auc": 0.6739,
+      "f1": 0.847,
+      "shuffle_accuracy_mean": 0.7739,
+      "shuffle_accuracy_std": 0.0215,
+      "shuffle_balanced_accuracy_mean": 0.6253,
+      "shuffle_auc_mean": 0.7096
+    },
+    {
+      "arm": "random_backbone",
+      "seed": 3.0,
+      "accuracy": 0.757,
+      "balanced_accuracy": 0.6123,
+      "auc": 0.7089,
+      "f1": 0.8479,
+      "shuffle_accuracy_mean": 0.7757,
+      "shuffle_accuracy_std": 0.0155,
+      "shuffle_balanced_accuracy_mean": 0.6396,
+      "shuffle_auc_mean": 0.7343
+    },
+    {
+      "arm": "random_backbone",
+      "seed": 4.0,
+      "accuracy": 0.776,
+      "balanced_accuracy": 0.6442,
+      "auc": 0.7274,
+      "f1": 0.8591,
+      "shuffle_accuracy_mean": 0.7949,
+      "shuffle_accuracy_std": 0.015,
+      "shuffle_balanced_accuracy_mean": 0.6714,
+      "shuffle_auc_mean": 0.7774
+    },
+    {
+      "arm": "random_backbone",
+      "seed": 5.0,
+      "accuracy": 0.7504,
+      "balanced_accuracy": 0.6005,
+      "auc": 0.6678,
+      "f1": 0.8441,
+      "shuffle_accuracy_mean": 0.7652,
+      "shuffle_accuracy_std": 0.0106,
+      "shuffle_balanced_accuracy_mean": 0.6196,
+      "shuffle_auc_mean": 0.6987
+    },
+    {
+      "arm": "random_backbone",
+      "seed": 6.0,
+      "accuracy": 0.7591,
+      "balanced_accuracy": 0.6121,
+      "auc": 0.6904,
+      "f1": 0.8496,
+      "shuffle_accuracy_mean": 0.7836,
+      "shuffle_accuracy_std": 0.0179,
+      "shuffle_balanced_accuracy_mean": 0.649,
+      "shuffle_auc_mean": 0.7313
+    },
+    {
+      "arm": "random_backbone",
+      "seed": 7.0,
+      "accuracy": 0.754,
+      "balanced_accuracy": 0.6005,
+      "auc": 0.6757,
+      "f1": 0.847,
+      "shuffle_accuracy_mean": 0.7639,
+      "shuffle_accuracy_std": 0.0172,
+      "shuffle_balanced_accuracy_mean": 0.6146,
+      "shuffle_auc_mean": 0.711
+    },
+    {
+      "arm": "random_backbone",
+      "seed": 8.0,
+      "accuracy": 0.757,
+      "balanced_accuracy": 0.6086,
+      "auc": 0.6761,
+      "f1": 0.8484,
+      "shuffle_accuracy_mean": 0.7609,
+      "shuffle_accuracy_std": 0.0182,
+      "shuffle_balanced_accuracy_mean": 0.6104,
+      "shuffle_auc_mean": 0.6849
+    },
+    {
+      "arm": "random_backbone",
+      "seed": 9.0,
+      "accuracy": 0.7386,
+      "balanced_accuracy": 0.574,
+      "auc": 0.6332,
+      "f1": 0.8381,
+      "shuffle_accuracy_mean": 0.7463,
+      "shuffle_accuracy_std": 0.012,
+      "shuffle_balanced_accuracy_mean": 0.5895,
+      "shuffle_auc_mean": 0.6694
+    },
+    {
+      "arm": "random_backbone",
+      "seed": 10.0,
+      "accuracy": 0.7509,
+      "balanced_accuracy": 0.5933,
+      "auc": 0.6477,
+      "f1": 0.8454,
+      "shuffle_accuracy_mean": 0.7609,
+      "shuffle_accuracy_std": 0.0186,
+      "shuffle_balanced_accuracy_mean": 0.6077,
+      "shuffle_auc_mean": 0.6783
+    },
+    {
+      "arm": "random_backbone",
+      "seed": 11.0,
+      "accuracy": 0.7898,
+      "balanced_accuracy": 0.6547,
+      "auc": 0.7306,
+      "f1": 0.8687,
+      "shuffle_accuracy_mean": 0.8005,
+      "shuffle_accuracy_std": 0.0094,
+      "shuffle_balanced_accuracy_mean": 0.6833,
+      "shuffle_auc_mean": 0.7513
+    },
+    {
+      "arm": "random_backbone",
+      "seed": 12.0,
+      "accuracy": 0.7627,
+      "balanced_accuracy": 0.6167,
+      "auc": 0.6963,
+      "f1": 0.8519,
+      "shuffle_accuracy_mean": 0.7882,
+      "shuffle_accuracy_std": 0.0067,
+      "shuffle_balanced_accuracy_mean": 0.6584,
+      "shuffle_auc_mean": 0.7538
+    },
+    {
+      "arm": "random_backbone",
+      "seed": 13.0,
+      "accuracy": 0.8036,
+      "balanced_accuracy": 0.687,
+      "auc": 0.7969,
+      "f1": 0.876,
+      "shuffle_accuracy_mean": 0.8146,
+      "shuffle_accuracy_std": 0.0133,
+      "shuffle_balanced_accuracy_mean": 0.7117,
+      "shuffle_auc_mean": 0.8167
+    },
+    {
+      "arm": "random_backbone",
+      "seed": 14.0,
+      "accuracy": 0.7427,
+      "balanced_accuracy": 0.5887,
+      "auc": 0.6579,
+      "f1": 0.8395,
+      "shuffle_accuracy_mean": 0.7668,
+      "shuffle_accuracy_std": 0.0172,
+      "shuffle_balanced_accuracy_mean": 0.6187,
+      "shuffle_auc_mean": 0.7033
+    },
+    {
+      "arm": "random_backbone",
+      "seed": 15.0,
+      "accuracy": 0.778,
+      "balanced_accuracy": 0.6553,
+      "auc": 0.7596,
+      "f1": 0.8594,
+      "shuffle_accuracy_mean": 0.7849,
+      "shuffle_accuracy_std": 0.0217,
+      "shuffle_balanced_accuracy_mean": 0.6682,
+      "shuffle_auc_mean": 0.7868
+    },
+    {
+      "arm": "random_backbone",
+      "seed": 16.0,
+      "accuracy": 0.7453,
+      "balanced_accuracy": 0.5979,
+      "auc": 0.6893,
+      "f1": 0.8403,
+      "shuffle_accuracy_mean": 0.7739,
+      "shuffle_accuracy_std": 0.018,
+      "shuffle_balanced_accuracy_mean": 0.6415,
+      "shuffle_auc_mean": 0.7361
+    },
+    {
+      "arm": "random_backbone",
+      "seed": 17.0,
+      "accuracy": 0.7407,
+      "balanced_accuracy": 0.5798,
+      "auc": 0.6461,
+      "f1": 0.839,
+      "shuffle_accuracy_mean": 0.7673,
+      "shuffle_accuracy_std": 0.0206,
+      "shuffle_balanced_accuracy_mean": 0.6206,
+      "shuffle_auc_mean": 0.6918
+    },
+    {
+      "arm": "random_backbone",
+      "seed": 18.0,
+      "accuracy": 0.7611,
+      "balanced_accuracy": 0.6127,
+      "auc": 0.7025,
+      "f1": 0.8511,
+      "shuffle_accuracy_mean": 0.7857,
+      "shuffle_accuracy_std": 0.0121,
+      "shuffle_balanced_accuracy_mean": 0.645,
+      "shuffle_auc_mean": 0.7348
+    },
+    {
+      "arm": "random_backbone",
+      "seed": 19.0,
+      "accuracy": 0.7361,
+      "balanced_accuracy": 0.5701,
+      "auc": 0.6506,
+      "f1": 0.8366,
+      "shuffle_accuracy_mean": 0.7471,
+      "shuffle_accuracy_std": 0.0101,
+      "shuffle_balanced_accuracy_mean": 0.5908,
+      "shuffle_auc_mean": 0.6817
+    }
+  ]
+}

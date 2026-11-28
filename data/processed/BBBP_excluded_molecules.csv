@@ -1,0 +1,96 @@
+source_num,name,smiles,label,reason,detail
+1,Propanolol,[Cl].CC(C)NCC(O)COc1cccc2ccccc12,1,conflicting labels,"parent has labels [0, 1] in source rows [1, 380]; both excluded, no external evidence to choose one"
+17,BRL53080,CN(C)C(=O)C(CCN1CCC(O)(CC1)c1ccc(Cl)cc1)(c1ccccc1)c1ccccc1,1,conflicting labels,"parent has labels [0, 1] in source rows [17, 552]; both excluded, no external evidence to choose one"
+60,15,O=N([O-])C1=C(CN=C1NCCSCc2ncccc2)Cc3ccccc3,1,invalid SMILES,RDKit sanitisation failed: explicit valence 4 on N (not repaired; a repair would be a chemical edit)
+62,22767,c1(nc(NC(N)=[NH2])sc1)CSCCNC(=[NH]C#N)NC,1,invalid SMILES,RDKit sanitisation failed: explicit valence 4 on N (not repaired; a repair would be a chemical edit)
+102,acetylsalicylate,CC(=O)Oc1ccccc1C(O)=O,0,conflicting labels,"parent has labels [0, 1] in source rows [102, 1009]; both excluded, no external evidence to choose one"
+128,atropine,CN1C2CCC1CC(C2)OC(=O)C(CO)c3ccccc3,0,conflicting labels,"parent has labels [0, 1] in source rows [128, 1701]; both excluded, no external evidence to choose one"
+154,Chlortetracycline,CN(C)[C@H]1[C@@H]2C[C@H]3C(=C(O)c4c(O)ccc(Cl)c4[C@@]3(C)O)C(=O)[C@]2(O)C(=O)\C(=C(N)/O)C1=O,0,duplicate structure,same parent as source row 129; first occurrence kept
+176,Trimetrexate,COc1cc(NCc2ccc3nc(N)nc(N)c3c2C)cc(OC)c1OC,0,conflicting labels,"parent has labels [0, 1] in source rows [176, 1645]; both excluded, no external evidence to choose one"
+267,indomethacin,COc1ccc2n(c(C)c(CC(O)=O)c2c1)C(=O)c3ccc(Cl)cc3,0,conflicting labels,"parent has labels [0, 1] in source rows [267, 1314]; both excluded, no external evidence to choose one"
+269,1-47,NCCc1cn2c(n1)cccc2,0,duplicate structure,same parent as source row 83; first occurrence kept
+284,levodopa,N[C@@H](Cc1ccc(O)c(O)c1)C(O)=O,0,conflicting labels,"parent has labels [0, 1] in source rows [284, 1881]; both excluded, no external evidence to choose one"
+305,mequitazine,C1CN2CCC1C(C2)CN3c4ccccc4Sc5ccccc35,0,conflicting labels,"parent has labels [0, 1] in source rows [305, 1361]; both excluded, no external evidence to choose one"
+312,L-663581,CC(C)c1onc(n1)c2ncn3c2CN(C)C(=O)c4c(Cl)cccc34,1,duplicate structure,same parent as source row 97; first occurrence kept
+325,Methylprednisolone,C[C@H]1C[C@H]2[C@@H]3CC[C@](O)(C(=O)CO)[C@@]3(C)C[C@H](O)[C@@H]2[C@@]4(C)C=CC(=O)C=C14,0,conflicting labels,"parent has labels [0, 1] in source rows [325, 1910]; both excluded, no external evidence to choose one"
+326,Miconazole,Clc1ccc(COC(Cn2ccnc2)c3ccc(Cl)cc3Cl)c(Cl)c1,0,conflicting labels,"parent has labels [0, 1] in source rows [326, 1381]; both excluded, no external evidence to choose one"
+337,Org12962,C1NCCN(C1)c1ccc(c(n1)Cl)C(F)(F)F,1,duplicate structure,same parent as source row 29; first occurrence kept
+380,propranolol,CC(C)NCC(O)COc1cccc2ccccc12,0,conflicting labels,"parent has labels [0, 1] in source rows [1, 380]; both excluded, no external evidence to choose one"
+388,111-trifluoro-2-chloroethane,C(CCl)(F)(F)F,1,duplicate structure,same parent as source row 96; first occurrence kept
+393,ICI17148,Cc1nc(sc1)\[NH]=C(\N)N,1,invalid SMILES,RDKit sanitisation failed: explicit valence 4 on N (not repaired; a repair would be a chemical edit)
+394,Mono-hydroxylated-L-663581,c12c(C(N(Cc3n1cnc3c1noc(n1)C(O)(C)C)C)=O)c(ccc2)Cl,0,duplicate structure,same parent as source row 70; first occurrence kept
+415,Ofloxacin,CC1COc2c(N3CCN(C)CC3)c(F)cc4C(=O)C(=CN1c24)C(O)=O,1,duplicate structure,same parent as source row 3; first occurrence kept
+422,theophylline,CN1C(=O)N(C)c2nc[nH]c2C1=O,0,duplicate structure,same parent as source row 105; first occurrence kept
+435,Dichloromethane,ClCCl,1,duplicate structure,same parent as source row 13; first occurrence kept
+453,amitriptyline,CN(C)CCC=C1c2ccccc2CCc3ccccc13,1,duplicate structure,same parent as source row 87; first occurrence kept
+457,Ethylbenzene,CCc1ccccc1,1,duplicate structure,same parent as source row 52; first occurrence kept
+468,cp29,c1cn(CCCCC)c(C)c(O)c1=O,1,duplicate structure,same parent as source row 467; first occurrence kept
+488,Nor-1-chlorpromazine,N1(c2c(Sc3c1cccc3)ccc(c2)Cl)CCCNC,1,duplicate structure,same parent as source row 46; first occurrence kept
+489,Nor-2-chlorpromazine,N1(c2c(Sc3c1cccc3)ccc(c2)Cl)CCCN,1,duplicate structure,same parent as source row 56; first occurrence kept
+508,Org13011,C1N(CCN(C1)c1cc(ccn1)C(F)(F)F)CCCCN1C(CCC1)=O,1,duplicate structure,same parent as source row 50; first occurrence kept
+533,RO19-4603,CN1Cc2n(cnc2C(=O)OC(C)(C)C)c3ccsc3C1=O,1,duplicate structure,same parent as source row 34; first occurrence kept
+534,SKF101468,C1C(Nc2c1c(ccc2)CCN(CCC)CCC)=O,1,duplicate structure,same parent as source row 85; first occurrence kept
+535,SKF89124,C1C(Nc2c1c(ccc2O)CCN(CCC)CCC)=O,1,duplicate structure,same parent as source row 75; first occurrence kept
+552,loperamide,CN(C)C(=O)C(CCN1CCC(O)(CC1)c2ccc(Cl)cc2)(c3ccccc3)c4ccccc4,0,conflicting labels,"parent has labels [0, 1] in source rows [17, 552]; both excluded, no external evidence to choose one"
+562,demerol,[H+].[Cl-].CCOC(=O)C1(CCN(C)CC1)c2ccccc2,1,duplicate structure,same parent as source row 140; first occurrence kept
+565,Y-G14,c1c(nccc1)CCNC,1,duplicate structure,same parent as source row 59; first occurrence kept
+566,Y-G15,c1c(nccc1)CCN(C)C,1,duplicate structure,same parent as source row 49; first occurrence kept
+569,Y-G20,c1c(nc2n1cccc2)CCN,0,duplicate structure,same parent as source row 83; first occurrence kept
+571,loratadine,CCOC(=O)N1CCC(CC1)=C2c3ccc(Cl)cc3CCc4cccnc24,0,conflicting labels,"parent has labels [0, 1] in source rows [571, 1338]; both excluded, no external evidence to choose one"
+591,Carbamazepineepoxide,NC(=O)N1c2ccccc2C3OC3c4ccccc14,1,duplicate structure,same parent as source row 72; first occurrence kept
+593,Tertbutylchlorambucil,c1cc(ccc1CCCC(OC(C)(C)C)=O)N(CCCl)CCCl,1,duplicate structure,same parent as source row 2; first occurrence kept
+607,doxylamine succinate,CN(C)CCOC(C)(c1ccccc1)c2ccccn2.OC(=O)CCC(O)=O,1,duplicate structure,same parent as source row 490; first occurrence kept
+616,5-6,s1cc(CSCCN\C(NC)=[NH]\C#N)nc1\[NH]=C(\N)N,1,invalid SMILES,RDKit sanitisation failed: explicit valence 4 on N (not repaired; a repair would be a chemical edit)
+617,5-66,c1cc(CCNC)ncc1,1,duplicate structure,same parent as source row 59; first occurrence kept
+618,5-67,c1cc(CCN(C)C)ncc1,1,duplicate structure,same parent as source row 49; first occurrence kept
+619,5-68,s1c(ncc1)CCN,1,duplicate structure,same parent as source row 567; first occurrence kept
+644,12,c1c(c(ncc1)CSCCN\C(=[NH]\C#N)NCC)Br,0,invalid SMILES,RDKit sanitisation failed: explicit valence 4 on N (not repaired; a repair would be a chemical edit)
+647,16,n1c(csc1\[NH]=C(\N)N)c1ccccc1,1,invalid SMILES,RDKit sanitisation failed: explicit valence 4 on N (not repaired; a repair would be a chemical edit)
+648,17,n1c(csc1\[NH]=C(\N)N)c1cccc(c1)N,0,invalid SMILES,RDKit sanitisation failed: explicit valence 4 on N (not repaired; a repair would be a chemical edit)
+649,18,n1c(csc1\[NH]=C(\N)N)c1cccc(c1)NC(C)=O,0,invalid SMILES,RDKit sanitisation failed: explicit valence 4 on N (not repaired; a repair would be a chemical edit)
+650,19,n1c(csc1\[NH]=C(\N)N)c1cccc(c1)N\C(NC)=[NH]\C#N,0,invalid SMILES,RDKit sanitisation failed: explicit valence 4 on N (not repaired; a repair would be a chemical edit)
+651,2,s1cc(nc1\[NH]=C(\N)N)C,1,invalid SMILES,RDKit sanitisation failed: explicit valence 4 on N (not repaired; a repair would be a chemical edit)
+667,24,C1CN(CCC1)Cc1cccc(c1)OCCCNC(=O)C,1,duplicate structure,same parent as source row 4; first occurrence kept
+668,25,C1CN(CCC1)Cc1cccc(c1)OCCCNC(=O)c1ccccc1,1,duplicate structure,same parent as source row 33; first occurrence kept
+669,26,C1CN(CCC1)Cc1cccc(c1)OCCCO,1,duplicate structure,same parent as source row 93; first occurrence kept
+670,27,C1CN(CCC1)Cc1cccc(c1)OCCCNc1ncccc1,1,duplicate structure,same parent as source row 89; first occurrence kept
+671,28,C1CN(CCC1)Cc1cccc(c1)OCCCNc1nccs1,1,duplicate structure,same parent as source row 69; first occurrence kept
+672,30,C1CN(CCC1)Cc1cccc(c1)OCCCNc1nc2c(o1)cccc2,1,duplicate structure,same parent as source row 79; first occurrence kept
+673,4,c1c(oc(c1)CN(C)C)CSCCNc1nc(c(c[nH]1)Cc1cc2c(cc1)cccc2)=O,0,duplicate structure,same parent as source row 23; first occurrence kept
+687,9-C17,c1(cc(N\C(=[NH]\c2cccc(c2)CC)C)ccc1)CC,1,invalid SMILES,RDKit sanitisation failed: explicit valence 4 on N (not repaired; a repair would be a chemical edit)
+690,Acebutolol,CCCC(=O)Nc1ccc(OCC(O)CNC(C)C)c(c1)C(C)=O,1,duplicate structure,same parent as source row 55; first occurrence kept
+713,midazolam maleate,Cc1ncc2CN=C(c3ccccc3F)c4cc(Cl)ccc4n12.OC(=O)\C=C/C(O)=O,1,duplicate structure,same parent as source row 315; first occurrence kept
+929,sultamicillin,CC1(C)S[C@@H]2[C@H](NC(=O)[C@H](N)c3ccccc3)C(=O)N2[C@H]1C(O)=O.CC4(C)[C@@H](N5[C@@H](CC5=O)[S]4(=O)=O)C(O)=O,0,duplicate structure,same parent as source row 108; first occurrence kept
+959,acetazolamide,CC(NC1=NN=C(S1)[S](N)(=O)=O)=O,1,duplicate structure,same parent as source row 450; first occurrence kept
+966,acyclovir/aciclovir,C1=NC2=C([N]1COCCO)NC(=NC2=O)N,1,duplicate structure,same parent as source row 691; first occurrence kept
+1009,aspirin,C1=CC=CC(=C1C(O)=O)OC(C)=O,1,conflicting labels,"parent has labels [0, 1] in source rows [102, 1009]; both excluded, no external evidence to choose one"
+1073,carphenazine/carfenazine,C1=C(C=CC3=C1N(CCCN2CCN(CC2)CCO)C4=C(S3)C=CC=C4)C(CC)=O,1,duplicate structure,same parent as source row 523; first occurrence kept
+1085,chloroform,C(Cl)(Cl)Cl,1,duplicate structure,same parent as source row 564; first occurrence kept
+1111,clopenthixol/zuclopenthixol,C1=C(Cl)C=CC3=C1\C(C2=C(C=CC=C2)S3)=C/CCN4CCN(CCO)CC4,1,duplicate structure,same parent as source row 555; first occurrence kept
+1314,indomethacin(indometacin),C1=CC(=CC2=C1[N](C(=C2CC(O)=O)C)C(C3=CC=C(Cl)C=C3)=O)OC,1,conflicting labels,"parent has labels [0, 1] in source rows [267, 1314]; both excluded, no external evidence to choose one"
+1338,loratadine,C1=CC(=CC2=C1C(C3=C(CC2)C=CC=N3)=C4CCN(C(OCC)=O)CC4)Cl,1,conflicting labels,"parent has labels [0, 1] in source rows [571, 1338]; both excluded, no external evidence to choose one"
+1361,mequitazine,C1=CC=CC2=C1SC5=C(N2CC3C4CCN(C3)CC4)C=CC=C5,1,conflicting labels,"parent has labels [0, 1] in source rows [305, 1361]; both excluded, no external evidence to choose one"
+1381,miconazole,C1=C(C=CC(=C1Cl)COC(C[N]2C=NC=C2)C3=C(C=C(C=C3)Cl)Cl)Cl,1,conflicting labels,"parent has labels [0, 1] in source rows [326, 1381]; both excluded, no external evidence to choose one"
+1388,moclobemide,C2=C(C(NCCN1CCOCC1)=O)C=CC(=C2)Cl,1,duplicate structure,same parent as source row 296; first occurrence kept
+1462,perphenazine,C1=C(Cl)C=CC3=C1N(C2=C(C=CC=C2)S3)CCCN4CCN(CCO)CC4,1,duplicate structure,same parent as source row 139; first occurrence kept
+1471,phenytoin,C1=CC=CC=C1C3(C2=CC=CC=C2)NC(=O)NC3=O,1,duplicate structure,same parent as source row 585; first occurrence kept
+1508,propofol,C1=CC=C(C(=C1C(C)C)O)C(C)C,1,duplicate structure,same parent as source row 191; first occurrence kept
+1541,ropinirole,C2=C(C1=C(NC(C1)=O)C=C2)CCN(CCC)CCC,1,duplicate structure,same parent as source row 85; first occurrence kept
+1567,sulfamethoxazole(tiabendazole),C1=CC(=CC=C1[S](NC2=NOC(=C2)C)(=O)=O)N,1,duplicate structure,same parent as source row 344; first occurrence kept
+1583,tamitinol,C1=C(C(=C(O)C(=N1)C)CNCC)CSC,1,duplicate structure,same parent as source row 654; first occurrence kept
+1597,tetrabenazine(tetrabenzine),C1=C(OC)C(=CC3=C1C2N(CC(CC(C)C)C(C2)=O)CC3)OC,1,duplicate structure,same parent as source row 219; first occurrence kept
+1645,trimetrexate,C1=C3C(=C(C(=C1)CNC2=CC(=C(C(=C2)OC)OC)OC)C)C(=NC(=N3)N)N,1,conflicting labels,"parent has labels [0, 1] in source rows [176, 1645]; both excluded, no external evidence to choose one"
+1662,vinyl-ether,C(=C)OC=C,1,duplicate structure,same parent as source row 437; first occurrence kept
+1701,atropine(hyoscyamine),C1=CC=CC=C1C(C(OC2CC3N(C)C(C2)CC3)=O)CO,1,conflicting labels,"parent has labels [0, 1] in source rows [128, 1701]; both excluded, no external evidence to choose one"
+1782,darvon(dextropropoxypheneandlevopropoxyphene),[C@](OC(=O)CC)([C@@H](CN(C)C)C)(CC1=CC=CC=C1)C2=CC=CC=C2.[H+].[Cl-],1,duplicate structure,same parent as source row 45; first occurrence kept
+1881,levodopa,[C@H](CC1=CC(=C(C=C1)O)O)(C(O)=O)N,1,conflicting labels,"parent has labels [0, 1] in source rows [284, 1881]; both excluded, no external evidence to choose one"
+1882,levomepromazine,[C@H](CN1C3=C(SC2=C1C=CC=C2)C=CC(=C3)OC)(CN(C)C)C,1,duplicate structure,same parent as source row 700; first occurrence kept
+1906,methadone(levomethadone),C1=CC=CC=C1C(C2=CC=CC=C2)(C(CC)=O)CC(N(C)C)C,1,duplicate structure,same parent as source row 15; first occurrence kept
+1910,methylprednisolone,[C@H]24[C@H]1[C@@]([C@](C(CO)=O)(O)CC1)(C[C@@H]([C@@H]2[C@@]3(C(=CC(=O)C=C3)[C@H](C4)C)C)O)C,1,conflicting labels,"parent has labels [0, 1] in source rows [325, 1910]; both excluded, no external evidence to choose one"
+1916,midazolam(midazolammaleate),C1=CC(=CC3=C1[N]2C(=CN=C2C)CN=C3C4=CC=CC=C4F)Cl,1,duplicate structure,same parent as source row 315; first occurrence kept
+1947,paracetamol(acetaminophen),N(C(=O)C)C1=CC=C(O)C=C1,1,duplicate structure,same parent as source row 101; first occurrence kept
+1961,phenelzine,[Cl].C1=CC=CC=C1CCNN,1,duplicate structure,same parent as source row 142; first occurrence kept
+1971,prazepine,C1=CC=CC2=C1N(C3=C(CC2)C=CC=C3)CCCN(C)C,1,duplicate structure,same parent as source row 664; first occurrence kept
+1979,promethazine,C1=CC=CC2=C1N(C3=C(S2)C=CC=C3)CC(C)N(C)C,1,duplicate structure,same parent as source row 189; first occurrence kept
+2031,trifluoperazine,C1=C(C=CC3=C1N(CCCN2CCN(CC2)C)C4=C(S3)C=CC=C4)C(F)(F)F,1,duplicate structure,same parent as source row 245; first occurrence kept
+2045,zimeldine,C2=C(\C(C1=CC=CN=C1)=C\CN(C)C)C=CC(=C2)Br,1,duplicate structure,same parent as source row 252; first occurrence kept

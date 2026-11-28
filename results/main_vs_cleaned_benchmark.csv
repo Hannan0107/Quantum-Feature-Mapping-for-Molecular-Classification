@@ -1,0 +1,10 @@
+dataset,model,auc,bacc,f1
+250_subset,Quantum Main (Source),0.8443,0.762,0.7533
+250_subset,Quantum Cleaned (Canonical),0.712,0.64,0.6352
+250_subset,Classical RF (Morgan),0.8365,0.75,0.7562
+full_1955,Quantum Main (Source),0.8805,0.7956,0.9107
+full_1955,Quantum Cleaned (Canonical),0.8015,0.7323,0.8904
+full_1955,Quantum Chemical,0.7664,0.6892,0.8729
+full_1955,Classical Composition Control,0.8133,0.7397,0.8893
+full_1955,Classical SVM (Morgan),0.882,0.768,0.9154
+full_1955,Classical RF (Morgan),0.8744,0.7238,0.9145

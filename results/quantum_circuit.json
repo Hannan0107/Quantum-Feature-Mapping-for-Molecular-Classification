@@ -1,0 +1,160 @@
+{
+  "molecule": "aspirin",
+  "smiles": "CC(=O)Oc1ccccc1C(=O)O",
+  "qiskit_version": "2.6.2",
+  "n_qubits": 12,
+  "backbone": [
+    {
+      "qubit": 0,
+      "atom_index": 0,
+      "element": "C",
+      "ry_angle": 0.65025
+    },
+    {
+      "qubit": 1,
+      "atom_index": 1,
+      "element": "C",
+      "ry_angle": 0.65025
+    },
+    {
+      "qubit": 2,
+      "atom_index": 2,
+      "element": "O",
+      "ry_angle": 1.18336
+    },
+    {
+      "qubit": 3,
+      "atom_index": 3,
+      "element": "O",
+      "ry_angle": 1.18336
+    },
+    {
+      "qubit": 4,
+      "atom_index": 4,
+      "element": "C",
+      "ry_angle": 0.65025
+    },
+    {
+      "qubit": 5,
+      "atom_index": 5,
+      "element": "C",
+      "ry_angle": 0.65025
+    },
+    {
+      "qubit": 6,
+      "atom_index": 6,
+      "element": "C",
+      "ry_angle": 0.65025
+    },
+    {
+      "qubit": 7,
+      "atom_index": 7,
+      "element": "C",
+      "ry_angle": 0.65025
+    },
+    {
+      "qubit": 8,
+      "atom_index": 8,
+      "element": "C",
+      "ry_angle": 0.65025
+    },
+    {
+      "qubit": 9,
+      "atom_index": 9,
+      "element": "C",
+      "ry_angle": 0.65025
+    }
+  ],
+  "tail_ry_angles": [
+    0.2995,
+    0.172
+  ],
+  "bond_rxx_gates": [
+    {
+      "qubits": [
+        0,
+        1
+      ],
+      "angle": 0.5
+    },
+    {
+      "qubits": [
+        1,
+        2
+      ],
+      "angle": 1.0
+    },
+    {
+      "qubits": [
+        1,
+        3
+      ],
+      "angle": 0.5
+    },
+    {
+      "qubits": [
+        3,
+        4
+      ],
+      "angle": 0.5
+    },
+    {
+      "qubits": [
+        4,
+        5
+      ],
+      "angle": 0.75
+    },
+    {
+      "qubits": [
+        5,
+        6
+      ],
+      "angle": 0.75
+    },
+    {
+      "qubits": [
+        6,
+        7
+      ],
+      "angle": 0.75
+    },
+    {
+      "qubits": [
+        7,
+        8
+      ],
+      "angle": 0.75
+    },
+    {
+      "qubits": [
+        8,
+        9
+      ],
+      "angle": 0.75
+    },
+    {
+      "qubits": [
+        9,
+        10
+      ],
+      "angle": 0.5
+    },
+    {
+      "qubits": [
+        9,
+        11
+      ],
+      "angle": 0.5
+    },
+    {
+      "qubits": [
+        9,
+        4
+      ],
+      "angle": 0.75
+    }
+  ],
+  "readout": "12 <Z> + 66 <ZZ> moments -> RBF SVM (C=10)",
+  "note": "angles are identical to the NumPy simulator used for the results"
+}

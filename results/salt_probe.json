@@ -1,0 +1,104 @@
+{
+  "config": {
+    "n_molecules": 1955,
+    "n_folds": 5,
+    "fold_seed": 42
+  },
+  "arms": [
+    {
+      "arm": "source_random_seed0",
+      "order": "source_random",
+      "strip_salts": false,
+      "seed": 0,
+      "auc": 0.8281,
+      "auc_ci_low": 0.8052,
+      "auc_ci_high": 0.8508,
+      "balanced_accuracy": 0.7404,
+      "f1": 0.8948
+    },
+    {
+      "arm": "source_random_seed1",
+      "order": "source_random",
+      "strip_salts": false,
+      "seed": 1,
+      "auc": 0.8002,
+      "auc_ci_low": 0.7768,
+      "auc_ci_high": 0.8245,
+      "balanced_accuracy": 0.7096,
+      "f1": 0.8836
+    },
+    {
+      "arm": "source_random_seed2",
+      "order": "source_random",
+      "strip_salts": false,
+      "seed": 2,
+      "auc": 0.8316,
+      "auc_ci_low": 0.8103,
+      "auc_ci_high": 0.8545,
+      "balanced_accuracy": 0.7458,
+      "f1": 0.8962
+    },
+    {
+      "arm": "source_random_stripped_seed0",
+      "order": "source_random",
+      "strip_salts": true,
+      "seed": 0,
+      "auc": 0.834,
+      "auc_ci_low": 0.8104,
+      "auc_ci_high": 0.8563,
+      "balanced_accuracy": 0.7479,
+      "f1": 0.8976
+    },
+    {
+      "arm": "source_random_stripped_seed1",
+      "order": "source_random",
+      "strip_salts": true,
+      "seed": 1,
+      "auc": 0.8013,
+      "auc_ci_low": 0.7777,
+      "auc_ci_high": 0.8252,
+      "balanced_accuracy": 0.7145,
+      "f1": 0.8862
+    },
+    {
+      "arm": "source_random_stripped_seed2",
+      "order": "source_random",
+      "strip_salts": true,
+      "seed": 2,
+      "auc": 0.8381,
+      "auc_ci_low": 0.8158,
+      "auc_ci_high": 0.8611,
+      "balanced_accuracy": 0.7497,
+      "f1": 0.8986
+    }
+  ],
+  "salt_diagnostics": [
+    {
+      "seed": 0,
+      "n_molecules": 1955,
+      "n_multifragment": 98,
+      "backbones_with_counterion": 98,
+      "fraction_with_counterion": 0.0501,
+      "label_rate_with_counterion": 0.6122,
+      "label_rate_without_counterion": 0.7722
+    },
+    {
+      "seed": 1,
+      "n_molecules": 1955,
+      "n_multifragment": 98,
+      "backbones_with_counterion": 20,
+      "fraction_with_counterion": 0.0102,
+      "label_rate_with_counterion": 0.75,
+      "label_rate_without_counterion": 0.7643
+    },
+    {
+      "seed": 2,
+      "n_molecules": 1955,
+      "n_multifragment": 98,
+      "backbones_with_counterion": 98,
+      "fraction_with_counterion": 0.0501,
+      "label_rate_with_counterion": 0.6122,
+      "label_rate_without_counterion": 0.7722
+    }
+  ]
+}
